@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Foundation for Sites</title>
+<!--    <link rel="stylesheet" href="../static/css/foundation.css"/>
+    <link rel="stylesheet" href="../static/css/app.css"/>-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.1/foundation.min.css"/>
+  </head>
+  <body>
+    <div class="row">
+      <div class="medium-12 columns">
+        <h1></h1>
+        <form action="post">
+        <input id="userName" name="userName" type="text" value=""/>
+        <button type="button" class="success button">Save</button>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="medium-12 columns">
+        <h1></h1>
+        <input  type="text" name="userName" value="James Carrot" th:value="${user.name}"/>
+        <button type="button" class="success button">Save</button>
+
+        <p th:text="${textIn}"></p>
+      </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/foundation/6.2.1/foundation.min.js"></script>
+<!--    <script src="../static/js/vendor/jquery.js"></script>
+    <script src="../static/js/vendor/what-input.js"></script>
+    <script src="../static/js/vendor/foundation.js"></script>-->
+    <script src="../static/js/app.js"></script>
+  </body>
+</html>

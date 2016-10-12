@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Handing Form Submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.1/foundation.min.css"/>
+
+    <!--<link rel="stylesheet" th:href="@{static/css/foundation.css}"/>-->
+
+</head>
+<body>
+<div class="row">
+    <div class="medium-12 columns">
+        <h1>Result</h1>
+        <p th:text="'id: ' + ${greeting.id}"/>
+        <p th:text="'content: ' + ${greeting.content}"/>
+        <a href="/greeting">Submit another message</a>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/foundation/6.2.1/foundation.min.js"></script>
+
+<!--<script th:src="@{static/js/vendor/jquery.js}"></script>
+<script th:src="@{static/js/vendor/foundation.min.js}"></script>
+<script th:src="@{static/js/vendor/what-input.js}"></script>-->
+<script th:src="@{static/js/app.js}"></script>
+</body>
+</html>
