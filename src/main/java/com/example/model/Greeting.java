@@ -2,14 +2,14 @@ package com.example.model;
 
 public class Greeting {
 
-    private int id;
+    private Integer id;
     private String content;
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 

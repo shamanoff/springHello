@@ -12,8 +12,8 @@
 <div class="row">
     <div class="medium-12 columns">
         <h1>Form</h1>
-        <form action="#" th:action="@{/greeting}" th:object="${greeting}" method="post">
-            <label>Id: <input type="text" th:field="*{id}" value=" "/></label>
+        <form action="#" th:action="@{/greeting}" th:object="${greetingForm}" method="post">
+            <label>Id: <input type="text" th:field="*{id}" /></label>
             <label>Message: <input type="text" th:field="*{content}"/></label>
             <p><input type="submit" class="button" value="Submit"/> <input type="reset" class="button" value="Reset"/></p>
         </form>
